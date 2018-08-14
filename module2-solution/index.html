@@ -1,9 +1,171 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Assignment 2</title>
+	<style>
+
+	* {
+ 		box-sizing: border-box;
+ 		/*	margin: 0;
+  		padding: 0;	*/
+	}
+
+	
+
+	h1 {
+		margin-top: 20px;
+	  	margin-bottom: 40px;
+	  	text-align: center;
+	  		  font-family: Helvetica;
+
+	}
+
+	p {
+	  margin-right: auto;
+	  margin-left: auto;
+	  font-family: Helvetica;
+	  color: black;
+	  top: 20px;
+	  position: absolute;
+	}
+
+	div.box {
+		position: relative;
+		  padding: 10px;
+		  border: 1px solid black;
+	  background-color: grey;
+	  height: 150px;
+	  margin-right: 10px;
+	  margin-left: 10px;
+	  margin-bottom: 10px;
+
+
+	}
+
+	div#title1 {
+				position: absolute;
+		border-left:  1px solid black;
+		border-bottom: 1px solid black;
+		width: 100px;
+		height: 30px;
+		right: 0;
+		top: 0;
+			  font-family: Helvetica;
+
+			  background-color: red;
+			  text-align: center;
+			  vertical-align: middle;
+			  line-height: 30px;
+
+	}
+
+	div#title2 {
+				position: absolute;
+		border-left:  1px solid black;
+		border-bottom: 1px solid black;
+		width: 100px;
+		height: 30px;
+		right: 0;
+		top: 0;
+			  font-family: Helvetica;
+
+			  background-color: yellow;
+			  text-align: center;
+			  vertical-align: middle;
+			  line-height: 30px;
+
+	}
+	
+	div#title3 {
+				position: absolute;
+		border-left:  1px solid black;
+		border-bottom: 1px solid black;
+		width: 100px;
+		height: 30px;
+		right: 0;
+		top: 0;
+			  font-family: Helvetica;
+
+			  background-color: pink;
+			  text-align: center;
+			  vertical-align: middle;
+			  line-height: 30px;
+
+	}
+
+	.row {
+  		width: 100%;
+  		padding: 5px;
+	}
+	/* Desktop Mode */
+		@media (min-width: 992px) {
+			.col-dm-3 {
+				float: left;
+				width: 33.33%;
+			}
+		}
+
+	/* Tablet Mode */
+		@media (min-width: 768px) and (max-width: 991px) {
+			.col-tm-6, .col-tm-12 {
+				float: left;
+			}
+
+  			.col-tm-6 {
+  				width: 50%;
+			}
+			.col-tm-12 {
+				width: 100%;
+			}
+		}
+
+	/* Mobile Mode */
+		@media (max-width: 767px) {
+  			.col-mm-12 {
+				float: left;
+				width: 100%;
+			}
+		}
+
+	</style>
 </head>
 <body>
+	<h1>Menu</h1>
+
+	<div class="row">
+
+		<div class="col-dm-3 col-tm-6 col-mm-12" >
+	   		<div class="box" >
+	   			<div id="title1">
+	   				Beef
+	   			</div>
+	   			
+	   			<p>Ask questions in Discussions if you get stuck! We are all learning, and going through getting stuck and then unstuck (even with someone's help) can be a very valuable learning experience!</p>
+	   		</div>
+	   	</div>
+
+	   	<div class="col-dm-3 col-tm-6 col-mm-12" >
+	   		<div class="box" >
+	   			<div id="title2">
+	   				Chicken
+	   			</div>
+	   			
+	   			<p>Don't get scared by the number of points below. It's really not so much. I just wanted to explain everything as clearly as I could and break it down into smaller steps.</p>
+	   		</div>
+	   	</div>
+
+   		<div class="col-dm-3 col-tm-12 col-mm-12" >
+	   		<div class="box" >
+	   			<div id="title3">
+	   				Pork
+	   			</div>
+	   			
+	   			<p>Warning: While not specifying borders and colors according to the requirements does not hurt your grade so much, not doing so will make it much harder for your classmates to peer grade the rest of your assignment.</p>
+	   		</div>
+	   	</div>
+   	</div>
 
 </body>
 </html>
